@@ -1,2 +1,2 @@
 # Blender Scripts
-Blender scripts - cretaed and collected
+Blender scripts - created and collected
