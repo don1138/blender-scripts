@@ -1,2 +1,2 @@
-# blender-scripts
-Blender scripts
+# Blender Scripts
+Blender scripts - cretaed and collected
