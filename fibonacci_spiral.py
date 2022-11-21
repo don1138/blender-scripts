@@ -8,7 +8,7 @@ c = 0.1 # scale factor
 mesh = bpy.data.meshes.new(name='Spiral 2')
 bm = bmesh.new()
 
-for i in range(0, n):
+for i in range(n):
     theta = i * math.radians(137.5)
     r = c * math.sqrt(i)
     bm.verts.new((math.cos(theta) * r, math.sin(theta) * r, 0.0))

@@ -30,4 +30,4 @@ for mod_name in context.preferences.addons.keys():
     name = mod.bl_info.get('name')
     cat = mod.bl_info.get('category')
     vers = mod.bl_info.get('version')
-    print(cat + " > " + name)
+    print(f"{cat} > {name}")

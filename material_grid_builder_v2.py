@@ -35,12 +35,10 @@ print("\nLIST OF MATERIAL(S)\n=================\n")
 # Get List of Collections
 def find_collection(context, item):
     collections = item.users_collection
-    if len(collections) > 0:
-        return collections[0]
-    return context.scene.collection
+    return collections[0] if len(collections) > 0 else context.scene.collection
 
 for mat in bpy.data.materials:
-    
+
     # Create Instance of Mannequin Object from Linked Mesh
     mesh = bpy.data.meshes["Manq"]
     obj = bpy.data.objects.new(mat.name, mesh)
@@ -54,7 +52,7 @@ for mat in bpy.data.materials:
     old_collection = find_collection(bpy.context, obj)
     collection.objects.link(obj)
     old_collection.objects.unlink(obj)
-    
+
     # Position Objects in a Grid
     obj.location = (round(loc_x,1), round(loc_y,1), 0.0)
     if loc_x < scale_pos - 0.1:
@@ -68,7 +66,7 @@ for mat in bpy.data.materials:
 #    find_it = "_"
 #    repl_it = " "
 #    mat_name = mat_name.replace(find_it, repl_it)
-    
+
     # Make Name Title Case
 #    obj.name = mat_name.title()
 #    obj.active_material.name = mat_name.title()
@@ -76,7 +74,7 @@ for mat in bpy.data.materials:
     # Print Material Name
     print("Row", row, "Col", col, "—", obj.active_material.name)
 #    print(round(loc_x,1), round(loc_y,1), "\n")
-    
+
     # Increment Row/Column Count
     count = count+1
     row = int(math.ceil(count/factor))

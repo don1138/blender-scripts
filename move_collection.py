@@ -29,9 +29,7 @@ coll_target = coll_scene.children.get("Collection")
 active_coll = C.view_layer.active_layer_collection.collection
 
 # Get parent of *active_coll*
-active_coll_parent = coll_parents.get(active_coll.name)
-
-if active_coll_parent:
+if active_coll_parent := coll_parents.get(active_coll.name):
     # Unlink *active_coll*
     active_coll_parent.children.unlink(active_coll)
 

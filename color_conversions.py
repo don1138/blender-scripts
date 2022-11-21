@@ -27,24 +27,16 @@ def hex_to_rgb_sm(h):
     r = (h & 0xff0000) >> 16
     g = (h & 0x00ff00) >> 8
     b = (h & 0x0000ff)
-    return tuple([srgb_to_linearrgb(c/0xff) for c in (r,g,b)])
+    return tuple(srgb_to_linearrgb(c/0xff) for c in (r,g,b))
 
 
 # https://www.cyril-richon.com/blog/2019/1/23/python-srgb-to-linear-linear-to-srgb
 
 def srgb2lin(s):
-    if s <= 0.0404482362771082:
-        lin = s / 12.92
-    else:
-        lin = pow(((s + 0.055) / 1.055), 2.4)
-    return lin
+    return s / 12.92 if s <= 0.0404482362771082 else pow(((s + 0.055) / 1.055), 2.4)
 
 def lin2srgb(lin):
-    if lin > 0.0031308:
-        s = 1.055 * (pow(lin, (1.0 / 2.4))) - 0.055
-    else:
-        s = 12.92 * lin
-    return s
+    return 1.055 * (pow(lin, (1.0 / 2.4))) - 0.055 if lin > 0.0031308 else 12.92 * lin
 
 
 # https://developerfacts.com/answer/214359-converting-hex-color-to-rgb-and-vice-versa
@@ -71,15 +63,13 @@ def srbg_to_hex(v):
     r = lin2srgb(v[0]) * 255
     g = lin2srgb(v[1]) * 255
     b = lin2srgb(v[2]) * 255
-    hex = r,g,b
-    return hex
+    return r, g, b
 
 def srbg_to_hex_int(v):
     r = int(lin2srgb(v[0]) * 255)
     g = int(lin2srgb(v[1]) * 255)
     b = int(lin2srgb(v[2]) * 255)
-    hex = r,g,b
-    return hex
+    return r, g, b
 
 
 print(f"\nColor R:   {colr} {col.r}")

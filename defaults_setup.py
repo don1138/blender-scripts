@@ -107,26 +107,26 @@ bpy.context.preferences.filepaths.show_system_bookmarks=True
 bpy.context.preferences.filepaths.use_filter_files=True
 bpy.context.preferences.filepaths.show_hidden_files_datablocks=False
 # FILE PATHS
-bpy.context.preferences.filepaths.font_directory='/Users/Don/Documents/Resources/~ FONTS/'
-bpy.context.preferences.filepaths.texture_directory='/Users/Don/Downloads/Green Room/Blender-Resources/MATERIALS/'
-bpy.context.preferences.filepaths.script_directory='/Users/Don/Desktop/Blender Desktop/_scripts/'
+bpy.context.preferences.filepaths.font_directory='/Users/USER_NAME/Documents/Resources/~ FONTS/'
+bpy.context.preferences.filepaths.texture_directory='/Users/USER_NAME/Downloads/Green Room/Blender-Resources/MATERIALS/'
+bpy.context.preferences.filepaths.script_directory='/Users/USER_NAME/Desktop/Blender Desktop/_scripts/'
 bpy.context.preferences.filepaths.render_output_directory='//'
 bpy.context.preferences.filepaths.render_cache_directory='//'
 
 # Add a list of asset libraries to add here
 asset_libraries = [
-    "/Users/Don/Documents/Blender/Assets/Blender Materials",
-    "/Users/Don/Documents/Blender/Assets/Community",
-    "/Users/Don/Documents/Blender/Assets/QMM",
-    "/Users/Don/Documents/Blender/Assets/B3DMatPack1,2",
-    "/Users/Don/Documents/Blender/Assets/Matlib VX",
-    "/Users/Don/Documents/Blender/Assets/MetaAndrocto",
-    "/Users/Don/Documents/Blender/Assets/B4A",
-    "/Users/Don/Documents/Blender/Assets/Generators",
-    "/Users/Don/Documents/Blender/Assets/PSA",
-    "/Users/Don/Documents/Blender/Assets/Sanctus",
-    "/Users/Don/Library/Application Support/Blender/3.3/scripts/addons/Bagapie",
-    "/Users/Don/Documents/Blender/Assets/Poly Haven"
+    "/Users/USER_NAME/Documents/Blender/Assets/Blender Materials",
+    "/Users/USER_NAME/Documents/Blender/Assets/Community",
+    "/Users/USER_NAME/Documents/Blender/Assets/QMM",
+    "/Users/USER_NAME/Documents/Blender/Assets/B3DMatPack1,2",
+    "/Users/USER_NAME/Documents/Blender/Assets/Matlib VX",
+    "/Users/USER_NAME/Documents/Blender/Assets/MetaAndrocto",
+    "/Users/USER_NAME/Documents/Blender/Assets/B4A",
+    "/Users/USER_NAME/Documents/Blender/Assets/Generators",
+    "/Users/USER_NAME/Documents/Blender/Assets/PSA",
+    "/Users/USER_NAME/Documents/Blender/Assets/Sanctus",
+    "/Users/USER_NAME/Library/Application Support/Blender/3.3/scripts/addons/Bagapie",
+    "/Users/USER_NAME/Documents/Blender/Assets/Poly Haven"
 ]
 
 # bpy.context.preferences.addons['cycles'].preferences.compute_device_type = "OPTIX" # ('NONE', 'CUDA', 'OPTIX', 'HIP', 'ONEAPI')
