@@ -107,9 +107,9 @@ bpy.context.preferences.filepaths.show_system_bookmarks=True
 bpy.context.preferences.filepaths.use_filter_files=True
 bpy.context.preferences.filepaths.show_hidden_files_datablocks=False
 # FILE PATHS
-bpy.context.preferences.filepaths.font_directory='/Users/USER_NAME/Documents/Resources/~ FONTS/'
-bpy.context.preferences.filepaths.texture_directory='/Users/USER_NAME/Downloads/Green Room/Blender-Resources/MATERIALS/'
-bpy.context.preferences.filepaths.script_directory='/Users/USER_NAME/Desktop/Blender Desktop/_scripts/'
+bpy.context.preferences.filepaths.font_directory='PATH_TO/Fonts/'
+bpy.context.preferences.filepaths.texture_directory='PATH_TO/Materials/'
+bpy.context.preferences.filepaths.script_directory='PATH_TO/Scripts/'
 bpy.context.preferences.filepaths.render_output_directory='//'
 bpy.context.preferences.filepaths.render_cache_directory='//'
 
