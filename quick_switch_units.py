@@ -20,7 +20,7 @@
 bl_info = {
   "name"        : "Quick Switch Units",
   "description" : "Change Measurement Units",
-  "author"      : "Don Schnitzius",
+  "author"      : "don1138",
   "version"     : (1, 0, 0),
   "blender"     : (3, 0, 0),
   "location"    : "3D Viewport > Sidebar > View > Switch Units",
