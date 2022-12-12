@@ -37,7 +37,7 @@ import bpy
 bl_info = {
     "name": "Kushiro Menu",
     "description": "Collect Kushiro Context Select Add-Ons into Sub Menu",
-    "author": "Don Schnitzius",
+    "author": "don1138",
     "version": (1, 0, 0),
     "blender": (2, 83, 0),
     "location": "View3D > Edit > Context Menu (right click)",
