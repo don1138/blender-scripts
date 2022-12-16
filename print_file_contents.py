@@ -29,3 +29,9 @@ for i in bpy.data.objects:
     print(i.name)
 
 print("")
+
+print("# WORLDS")
+for i in bpy.data.worlds:
+    print(i.name)
+
+print("")
