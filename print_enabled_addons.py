@@ -15,6 +15,7 @@
 
 import bpy
 import sys
+import re
 
 context = bpy.context
 
@@ -23,4 +24,9 @@ for mod_name in context.preferences.addons.keys():
     name = mod.bl_info.get('name')
     cat = mod.bl_info.get('category')
     vers = mod.bl_info.get('version')
-    print(cat,">",name,mod)
+    print(f"{cat} > {name}\n{mod}")
+
+    # Parse 'mod' to get key names
+#    qlist = re.findall("\'(.*?)\'",str(mod))
+#    qval = qlist[0]
+#    print(f"'{qval}',")
