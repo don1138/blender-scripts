@@ -18,7 +18,7 @@ bpy.context.scene.cycles.volume_bounces = 0
 bpy.context.scene.cycles.transparent_max_bounces = 2
 bpy.context.scene.cycles.caustics_reflective = False
 bpy.context.scene.cycles.caustics_refractive = False
-# PREFORMANCE
+# PERFORMANCE
 bpy.context.scene.cycles.use_auto_tile = False
 bpy.context.scene.cycles.debug_use_spatial_splits = True
 bpy.context.scene.render.use_persistent_data = True
