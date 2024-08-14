@@ -19,7 +19,7 @@
 
 bl_info = {
     "name"       : "QSM (Quick Set Multiscatter)",
-    "description": "Sets Principled BDSF Distribution to Multiscatter GGX",
+    "description": "Sets BDSF Node Distribution to Multiscatter GGX",
     "author"     : "Don Schnitzius",
     "version"    : (1, 0, 0),
     "blender"    : (4, 00, 0),
